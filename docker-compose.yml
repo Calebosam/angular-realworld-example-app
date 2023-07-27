@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+  my-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "my-app"
+    ports:
+      - "4207:3000"
+    restart: on-failure
